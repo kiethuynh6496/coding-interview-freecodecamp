@@ -1,0 +1,31 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 16
+VisualStudioVersion = 16.0.30804.86
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Test0204", "Test0204\Test0204.csproj", "{8221A1B4-23A0-42FB-B4EB-FFE5BAE25B59}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "freecodecamp_2007", "freecodecamp_2007\freecodecamp_2007.csproj", "{5C19DE90-313B-4D33-B829-DF35033C669A}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{8221A1B4-23A0-42FB-B4EB-FFE5BAE25B59}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{8221A1B4-23A0-42FB-B4EB-FFE5BAE25B59}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{8221A1B4-23A0-42FB-B4EB-FFE5BAE25B59}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{8221A1B4-23A0-42FB-B4EB-FFE5BAE25B59}.Release|Any CPU.Build.0 = Release|Any CPU
+		{5C19DE90-313B-4D33-B829-DF35033C669A}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{5C19DE90-313B-4D33-B829-DF35033C669A}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{5C19DE90-313B-4D33-B829-DF35033C669A}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{5C19DE90-313B-4D33-B829-DF35033C669A}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {1B2D3BC5-9349-4A86-831B-83395DA56D79}
+	EndGlobalSection
+EndGlobal
