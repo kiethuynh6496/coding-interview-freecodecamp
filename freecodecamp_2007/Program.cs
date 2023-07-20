@@ -14,19 +14,25 @@ namespace freecodecamp_2007
             int neededNumberIndex;
             int sum = 0;
             Dictionary<int, int> numPairs = new Dictionary<int, int>();
+            // O(n)
             for(int i = 0; i < arr.Length; i++)
             {
                 neededNumber = result - arr[i];
-                if(numPairs.ContainsKey(neededNumber))
+                // Check the existence of neededNumber variable
+                if(numPairs.ContainsValue(neededNumber))
                 {
-                    neededNumberIndex = numPairs[neededNumber];
+                    // Get index(key in dictionary) of neededNumber variable
+                    // ???? big O
+                    neededNumberIndex = numPairs.FirstOrDefault(num => num.Value == neededNumber).Key;
+                    // Calculate the sum of the indexes
                     sum = sum + (i + neededNumberIndex);
+                    // If the input array contains duplicate elements, we must remove the first element to avoid getting a first index of numParis many times
+                    numPairs.Remove(neededNumberIndex);
                     continue;
                 }
-                if (!numPairs.ContainsKey(arr[i]))
-                {
-                    numPairs.Add(arr[i], i);
-                }
+
+                // Store the elements in [index, value] dictionary
+                numPairs.Add(i, arr[i]);
             }
             return sum;
         }
@@ -54,7 +60,7 @@ namespace freecodecamp_2007
             // Case 3
             //result: 1
             //int[] numbers = { 1, 1, 1 };
-            //int sum = pairwise(numbers, 1);
+            //int sum = pairwise(numbers, 2);
 
             // Case 4
             //result: 10
